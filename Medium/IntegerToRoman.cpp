@@ -73,7 +73,8 @@ string convertIntToRoman(int num) {
     for(int i=0;i<13;i++) {
         while(num >= vec[i].first) {
             res += vec[i].second;
-            num -= vec[i].first;        }
+            num -= vec[i].first;        
+        }
     }
     return res;
 }
